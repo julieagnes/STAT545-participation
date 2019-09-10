@@ -1,0 +1,31 @@
+---
+title: "Tibble Exploration"
+author: Julie Park
+date: Sept 10, 2019
+output: 
+  html_document:
+    toc: true
+    number_section: true
+    theme: cerulean
+---
+
+```{r load, warning=F, echo=F}
+library(gapminder)
+library(tibble)
+library(DT)
+```
+
+## Print out gapminder data:
+
+```{r}
+gapminder
+```
+
+<!--This is a comment-->
+
+Convert mtcars to a tibble, and wrap in datatable:
+
+```{r}
+datatable(as_tibble(mtcars))
+```
+
