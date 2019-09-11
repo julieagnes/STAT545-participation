@@ -1,12 +1,14 @@
 ---
 title: "Tibble Exploration"
-author: Julie Park
-date: Sept 10, 2019
-output: 
+author: "Julie Park"
+date: "Sept 10, 2019"
+output:
+  pdf_document:
+    toc: yes
   html_document:
-    toc: true
-    number_section: true
+    number_selection: yes
     theme: cerulean
+    toc: yes
 ---
 
 ```{r load, warning=F, echo=F}
