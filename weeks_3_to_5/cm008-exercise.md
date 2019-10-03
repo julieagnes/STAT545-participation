@@ -159,9 +159,12 @@ We're starting with the same plot as above, but instead of the points + boxplot,
 ```r
 gapminder %>% 
   filter(continent == "Americas") %>% 
-  ggplot(aes(country, lifeExp)) + 
-  geom_point() +
-  geom_boxplot()
+  ggplot(aes(lifeExp, country)) + 
+  ggridges::geom_density_ridges() #+ggridges::geom_rug()
+```
+
+```
+## Picking joint bandwidth of 3.63
 ```
 
 ![](cm008-exercise_files/figure-html/unnamed-chunk-9-1.png)<!-- -->
